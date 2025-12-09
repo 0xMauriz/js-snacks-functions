@@ -6,10 +6,10 @@ let nameOfUser;
 
 // Dichiara la funzione qui.
 
-let saluto = () => console.log('Ciao' + nameOfUser);
+let saluto = (nameOfUser) => console.log('Ciao' + ' ' + nameOfUser);
 
 // Invoca la funzione qui e stampa il risultato in console
 
-(userName);
+saluto(userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
