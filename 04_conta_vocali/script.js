@@ -18,12 +18,13 @@ const howManyVowels = (aString) => {
             }
     }
 
-    console.log(vowelsCounter);
+    return (vowelsCounter);
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-howManyVowels(word);
+let vowelsCount = howManyVowels(word);
+console.log(vowelsCount);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
