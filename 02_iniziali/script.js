@@ -14,14 +14,17 @@ const firstCharOnly = (arrayOfNames) => {
         arrayFirstChar += arrayOfNames[i][0] + "," + " ";
     }
 
-    console.log(arrayFirstChar);
+    return arrayFirstChar;
+
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
 
-firstCharOnly(names);
+let firstLetterOfEveryWord = [firstCharOnly(names)];
+
+console.log(firstLetterOfEveryWord);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

@@ -2,14 +2,17 @@
 
 const userName = 'Mario';
 let nameOfUser;
+let salutaMario; 
 
 
 // Dichiara la funzione qui.
 
-const saluto = (nameOfUser) => console.log('Ciao' + ' ' + nameOfUser);
+const saluto = (nameOfUser) => {const salutoAllUtente = ('Ciao' + ' ' + nameOfUser); return salutoAllUtente;}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-saluto(userName);
+salutaMarco = saluto(userName);
+console.log(salutaMario);
+
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

@@ -5,7 +5,7 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const nameA = 'Mario';
+const name = 'Mario';
 
 
 // Dichiara la funzione qui.
@@ -34,6 +34,6 @@ const welcomeUser = (userName) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-welcomeUser(nameA);
+welcomeUser(name);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
