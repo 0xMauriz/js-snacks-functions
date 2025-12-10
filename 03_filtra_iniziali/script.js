@@ -5,22 +5,24 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const startsWithCharA = (arrayOfNames) => {
+const startsWithChar = (arrayOfNames, letter) => {
 
-    let charSaver = [];
+    let wordsSaver = [];
 
     for (let i = 0; i < arrayOfNames.length; i++) {
-        if (arrayOfNames[i][0] === "A") {
-            charSaver += arrayOfNames[i] + "," + " ";
+        if (arrayOfNames[i][0] === letter) {
+            wordsSaver += arrayOfNames[i] + "," + " ";
         }
     }
-    
-    console.log(charSaver);
+    return wordsSaver;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-startsWithCharA(names);
+let oneLetter = prompt("Inserisci una lettera per verificare quali parole dell'array iniziano con quest'ultima: ");
+
+let wordsSaver = startsWithChar(names, oneLetter);
+console.log(wordsSaver);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

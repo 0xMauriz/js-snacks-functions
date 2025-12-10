@@ -11,7 +11,7 @@ const saluto = (nameOfUser) => {const salutoAllUtente = ('Ciao' + ' ' + nameOfUs
 
 // Invoca la funzione qui e stampa il risultato in console
 
-salutaMarco = saluto(userName);
+salutaMario = saluto(userName);
 console.log(salutaMario);
 
 
