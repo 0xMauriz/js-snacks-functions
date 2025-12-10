@@ -6,7 +6,7 @@ let nameOfUser;
 
 // Dichiara la funzione qui.
 
-let saluto = (nameOfUser) => console.log('Ciao' + ' ' + nameOfUser);
+const saluto = (nameOfUser) => console.log('Ciao' + ' ' + nameOfUser);
 
 // Invoca la funzione qui e stampa il risultato in console
 
