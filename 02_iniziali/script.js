@@ -11,7 +11,7 @@ const firstCharOnly = (arrayOfNames) => {
     let arrayFirstChar = [];
 
     for (let i = 0; i < arrayOfNames.length; i++) {
-        arrayFirstChar += arrayOfNames[i][0] + ",";
+        arrayFirstChar += arrayOfNames[i][0] + "," + " ";
     }
 
     console.log(arrayFirstChar);
