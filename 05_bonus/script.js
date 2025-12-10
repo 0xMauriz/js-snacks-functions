@@ -15,18 +15,18 @@ const welcomeUser = (userName) => {
 
     const now = new Date();
 
-    const hourNow = now.getHours();
+    let hourNow = now.getHours();
 
     if (hourNow <= 13) {
-        console.log('buongiorno' + ' ' + userName);
+        return ('buongiorno' + ' ' + userName);
     }
 
     if (hourNow > 13 && hourNow <= 17) {
-        console.log('buon pomeriggio' + ' ' + userName);
+        return ('buon pomeriggio' + ' ' + userName);
     }
 
     if (hourNow > 17) {
-        console.log('buonasera' + ' ' + userName);
+        return ('buonasera' + ' ' + userName);
     }
 }
 
@@ -34,6 +34,7 @@ const welcomeUser = (userName) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-welcomeUser(name);
+let welcomeSaver = welcomeUser(name);
+console.log(welcomeSaver);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
